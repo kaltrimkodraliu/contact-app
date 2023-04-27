@@ -1,0 +1,10 @@
+.generalButton {
+  width: 100%;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: solid;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}

@@ -1,0 +1,16 @@
+.TextInput {
+    height: 50px;
+  
+  }
+  
+  .FormInput {
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: black;
+    outline: none;
+    width: 100%;
+    padding-left: 12px;
+  }
