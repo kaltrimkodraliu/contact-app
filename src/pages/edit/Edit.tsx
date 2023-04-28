@@ -1,3 +1,4 @@
+import Navbar from "../../components/Navbar";
 import GeneralButton from "../../uikit/buttons/GeneralButton";
 import GeneralInput from "../../uikit/inputs/GeneralInput";
 import styles from './Edit.module.css';
@@ -5,7 +6,11 @@ import styles from './Edit.module.css';
 const Edit = () => {
 
   return (
+    <div className="">
+      <Navbar text="PhoneBook"></Navbar>
+    
     <div className= {`w-100 mt-5 d-flex align-items-center justify-content-center`}>
+      
       
       <div className={`d-flex flex-column ${styles.divContainer}`}>
       <h2>Register new contact</h2>
@@ -43,7 +48,7 @@ const Edit = () => {
         </div>
       </div>
     </div>
-   
+    </div>
     
   );
 };
