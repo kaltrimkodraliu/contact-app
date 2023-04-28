@@ -1,5 +1,6 @@
 import GeneralButton from "../../uikit/buttons/GeneralButton";
 import GeneralInput from "../../uikit/inputs/GeneralInput";
+import Input from "../../uikit/inputs/Input";
 import styles from './ContactAdd.module.css';
 
 const ContactAdd = () => {
@@ -24,19 +25,17 @@ const ContactAdd = () => {
           </div>
           <div>
           <GeneralInput label="Email:" placeholder="Enter the Email"/>
-          <div  className={styles.input}>
-          <GeneralInput  placeholder="Enter the Email"/>
-          <GeneralInput  placeholder="Enter the Email"/>
-          </div>
+          <Input  placeholder="Enter the Email"/>
+          <Input  placeholder="Enter the Email"/>
           </div>
           <div className={` ${styles.buttonAdd}`}>
           <GeneralButton text="Add"></GeneralButton>
           </div>
           <div>
           <GeneralInput label="Number:" placeholder="Enter the Number"/>
-          <GeneralInput placeholder="Enter the Number"/>
-          <GeneralInput placeholder="Enter the Number"/>
-          <GeneralInput placeholder="Enter the Number"/>
+          <Input placeholder="Enter the Number"/>
+          <Input placeholder="Enter the Number"/>
+          <Input placeholder="Enter the Number"/>
           </div>
           <div className={`${styles.buttonAdd}`}>
           <GeneralButton text="Add"></GeneralButton>
