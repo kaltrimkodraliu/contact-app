@@ -1,7 +1,7 @@
 import styles from './GeneralInput.module.css';
 
 type Props = {
-  label: string;
+  label?: string;
   placeholder?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };

@@ -9,37 +9,36 @@ const Edit = () => {
       
       <div className={`d-flex flex-column ${styles.divContainer}`}>
       <h2>Register new contact</h2>
-        <GeneralInput label="Name:" />
-        <div className="mt-2">
-        <GeneralInput label="Last Name:" />
+        <GeneralInput label="Name:" placeholder="Enter the Name" />
+        <div>
+        <GeneralInput label="Last Name:" placeholder="Enter Last Name"/>
         </div>
-        <div className="mt-2">
-          <GeneralInput label="Address:" />
+        <div>
+          <GeneralInput label="Address:" placeholder="Enter Address"/>
         </div>
-        <div className="mt-2">
-        <GeneralInput label="City:" />
+        <div>
+        <GeneralInput label="City:" placeholder="Enter City"/>
         </div>
-        <div className="mt-2">
-        <GeneralInput label="Country:" />
+        <div>
+        <GeneralInput label="Country:" placeholder="Enter Country"/>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex">
         <div className={`${styles.inputContainer}`}>
-        <GeneralInput label="Email:" />
+        <GeneralInput label="Email:" placeholder="Enter the Email"/>
         </div>
         <div className={`d-flex ${styles.buttonAdd}`}>
         <GeneralButton text="Add"></GeneralButton>
         </div>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex">
         <div className={`${styles.inputContainer}`}>
-        <GeneralInput label="Number:" />
+        <GeneralInput label="Number:" placeholder="Enter the Number"/>
         </div>
         <div className={`d-flex ${styles.buttonAdd}`}>
         <GeneralButton text="Add"></GeneralButton>
         </div>
         </div>
-        
-        <div className={styles.buttonContainer}>
+        <div className={`mt-2 ${styles.buttonContainer}`}>
           <GeneralButton text="Save"></GeneralButton>
         </div>
       </div>
@@ -50,4 +49,3 @@ const Edit = () => {
 };
 
 export default Edit;
-
