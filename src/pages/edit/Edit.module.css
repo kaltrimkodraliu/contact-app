@@ -1,0 +1,18 @@
+.divContainer{
+    width: 80%;
+    height: 50%;
+}
+
+.buttonContainer{
+    width: 80px;
+}
+
+.inputContainer{
+    width: 95%;
+}
+
+.buttonAdd{
+    width: 50px;
+    margin-left: 6px;
+    margin-top: 26px;
+}

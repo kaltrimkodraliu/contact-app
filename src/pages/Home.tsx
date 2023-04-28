@@ -1,12 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import GeneralButton from "../uikit/buttons/GeneralButton";
-import GeneralInput from "../uikit/inputs/GeneralInput";
+
 
 const Home = () => {
-
+const navigate = useNavigate()
   return (
     <div className="w-100 mt-5 ">
-      <GeneralInput label="kalteim"></GeneralInput>
-      <GeneralButton text="kalteim"></GeneralButton>
+      <GeneralButton onClick={() => navigate('/edit')} text="ADD"></GeneralButton>
     </div>
   );
 };

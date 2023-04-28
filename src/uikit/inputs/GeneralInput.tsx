@@ -8,10 +8,10 @@ type Props = {
 
 const GeneralInput = ({ label, placeholder, onChange }: Props) => {
   return (
-    <div className="d-flex align-items-center">
-      <label className="me-3">{label}
+    <div className={`w-100 ${styles.textLabel}`}>
+      <label>{label}
       </label>
-      <div className={`d-flex w-100 ${styles.TextInput}`}>
+      <div className={`w-100 mt-2 ${styles.TextInput}`}>
         <input
           className={styles.FormInput}
           placeholder={placeholder}
