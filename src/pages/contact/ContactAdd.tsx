@@ -7,7 +7,7 @@ import styles from './ContactAdd.module.css';
 const ContactAdd = () => {
 
     return (
-        <div className="">
+        <div>
       <Navbar text="PhoneBook"></Navbar>
       <div className= {`w-100 mt-5 d-flex align-items-center justify-content-center`}> 
         <div className={`d-flex flex-column ${styles.divContainer}`}>
