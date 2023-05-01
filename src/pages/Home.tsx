@@ -1,19 +1,53 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import GeneralButton from "../uikit/buttons/GeneralButton";
+
 
 
 const Home = () => {
-const navigate = useNavigate()
   return (
-  <div>
-      <Navbar text="PhoneBook"></Navbar>
+   <div>
+    <Navbar text="PhoneBook"></Navbar>
+    <div className="container">
+    <div className="row">
+      <div className="col-md-12 my-5 text-end">
+        <Link to="/contact-add" className="btn btn-primary">
+          Add Contact
+        </Link>
+        <td>
+        <Link
+          to={`/edit/`}
+          className="btn btn-small btn-danger"> Delete
+          </Link>
+          </td>
+          <Link
+          to={`/edit/`}
+          className="btn btn-small btn-success"> Edit
+        </Link>
+      </div>
+      <div className="col-md-12 mx-auto">
+        <h1>Contacts</h1>
+        <table className="table table-bordered table-striped">
+          <thead className=" text-center">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">LastName</th>
+              <th scope="col">Address</th>
+              <th scope="col">city</th>
+              <th scope="col">country</th>
+              <th scope="col">Email</th>
+              <th scope="col">Number</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody className="text-center">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
     
-    <div className="d-flex align-items-center w-50 mt-5 ">
-      <GeneralButton onClick={() => navigate('/edit')} text="EDIT"></GeneralButton>
-      <GeneralButton onClick={() => navigate('/contact-add')} text="CONTACT"></GeneralButton>
-    </div>
-    </div>
   );
 };
 
